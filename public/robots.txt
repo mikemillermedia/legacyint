@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /pricing
+Allow: /login
+Disallow: /hub
+
+Sitemap: https://riseandrenderdfw.com/sitemap.xml
+

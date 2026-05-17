@@ -1,0 +1,8 @@
+{
+  "name": "Rise and Render - Christian Creator Community",
+  "description": "A community for Creatives Representing Christ focusing on tech, gear, and elevating your content.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
