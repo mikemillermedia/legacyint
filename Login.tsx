@@ -20,10 +20,10 @@ export default function Login() {
 
   // --- NATIVE SEO LOGIC ---
   useEffect(() => {
-    document.title = "Rise & Render | Community Login";
+    document.title = "Legacy International | Community Login";
     
     let metaDescription = document.querySelector('meta[name="description"]');
-    const descriptionText = "Sign in or create a free account for the Rise & Render Community. Connect, collaborate, and access premium tools built exclusively for faith-driven creators.";
+    const descriptionText = "Sign in or create a free account to join the Legacy International Community where you can access sermon guides, submit prayer requests and chat with the community.";
     
     if (metaDescription) {
       metaDescription.setAttribute("content", descriptionText);
@@ -76,7 +76,7 @@ export default function Login() {
         <div className="absolute -top-32 -right-32 w-64 h-64 bg-[#ff4d00] rounded-full mix-blend-screen filter blur-[100px] opacity-10" />
 
         <div className="text-center mb-8 relative z-10">
-          <h1 className="text-3xl font-black text-white uppercase tracking-widest">RISE & <span className="text-[#ff4d00]">RENDER</span></h1>
+          <h1 className="text-3xl font-black text-white uppercase tracking-widest">LEGACY <span className="text-[#ff4d00]">INTERNATIONAL</span></h1>
           <p className="text-[#ff4d00] font-bold text-xs tracking-widest mt-2 uppercase">Community Login</p>
           <p className="text-white/70 mt-4 text-sm leading-relaxed">
             {isSignUp ? "Create a free account to unlock your digital ecosystem. Connect, collaborate, and access premium tools built exclusively for faith-driven creators." : "Welcome back! Sign in to access the community."}
