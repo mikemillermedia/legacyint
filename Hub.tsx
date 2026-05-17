@@ -9,7 +9,6 @@ import CommunityChat from './CommunityChat';
 import Members from './Members';
 import DirectMessages from './components/DirectMessages'; 
 import CollabBoard from './components/CollabBoard'; 
-import freeKitImage from './The Content Creator Studio Kit.jpg'; // Note: You may want to update this image asset later for the church
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
