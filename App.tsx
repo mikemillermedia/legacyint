@@ -1,33 +1,22 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import Login from './Login';
 import Hub from './Hub';
-import CookieConsent from './CookieConsent';
-import { loadAnalytics } from './analytics';
+import Login from './Login';
 
-export default function App() {
-  
-  // Check for returning users on initial load
-  useEffect(() => {
-    const userConsent = localStorage.getItem('user_cookie_consent');
-    if (userConsent === 'accepted_all') {
-      loadAnalytics();
-    }
-  }, []);
-
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/hub" element={<Hub />} />
-        </Routes>
-      </BrowserRouter>
-      
-      {/* Global Cookie Consent Popup */}
-      <CookieConsent />
-    </>
+    <Router>
+      <Routes>
+        {/* This tells the app to load LandingPage on the main URL */}
+        <Route path="/" element={<LandingPage />} />
+        
+        {/* Your other routes */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/hub" element={<Hub />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
